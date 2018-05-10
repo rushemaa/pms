@@ -1,0 +1,13 @@
+ErrorDocument 404 /rwandaevents/404.php
+ErrorDocument 403 /rwandaevents/403.php
+# Turn Rewrite Engine On
+# For rewriting url
+RewriteEngine on
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^contact-us$ contact.php [NC,L]
+RewriteRule ^frequently-asked-questions$ faq.php [NC,L]
+RewriteRule ^registration/([0-9]+)$ register.php?event=$1 [NC,L]
+RewriteRule ^umwiherero/([0-9]+)$ umwiherero.php?event=$1 [NC,L]
+RewriteRule ^registration-destails/([0-9]+)$ reg-details.php?participant=$1 [NC,L]
+RewriteRule ^terms-and-conditions$ terms.php [NC,L]
+Options -Indexes

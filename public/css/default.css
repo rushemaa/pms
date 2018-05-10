@@ -1,0 +1,9 @@
+/* this is a custom css file */
+.required-mark{
+	color: red;
+}
+.form-control:focus {
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
